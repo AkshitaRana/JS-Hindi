@@ -36,3 +36,29 @@ const myFunction = function(){
 // console.log(typeof myFunction) [function]
 
 // ****Javascript is a dynamically typed lang because we don't declare type of variable.****
+
+
+// ######################################################################################
+
+
+// Types of memory- Stack (Primitive)-copy, Heap (Non-primitive)-reference of original data
+
+let user = "Fantastic"
+let user2 = user
+
+user2 = "Outstanding"
+// console.log(user);
+// console.log(user2);
+
+
+let userOne = {
+    name: "Akshita",
+    email: "user@gmail.com",
+}
+
+let userTwo = userOne;
+
+userTwo.email = "asdgoogle.com"
+
+// console.log(userOne.email);
+// console.log(userTwo.email);
