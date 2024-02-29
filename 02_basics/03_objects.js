@@ -1,5 +1,3 @@
-//singelton
-
 //Object literals (no singlton)
 
 const mySymbol = Symbol("key1")
