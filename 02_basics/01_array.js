@@ -31,3 +31,4 @@ console.log("A ", myn1);
 const myn2 = myArr.splice(0,3)//it removes the elements of that range from original array
 console.log("B ", myn2);
 console.log(myArr);
+
