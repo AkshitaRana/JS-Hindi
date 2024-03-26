@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<h1>>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Learning Async-sync with Task</h1>
+    <button id="stop">Stop</button>
+    <button id="start">Start</button>
+</body>
+<script>
+    // 1st Way
+    // const sayDate = function(){
+    //     console.log("Akshita", Date.now());
+    // }
+    // setInterval(sayDate, 1000,)
+
+
+    // 2nd way
+    // setInterval(() => {
+    //     console.log("Akshita", Date.now());
+    // }, 1000);
+
+
+    let stopMsg;
+    // 3rd way
+    document.querySelector('#start').addEventListener('click', function(){
+        const sayDate = function(str){
+        console.log(str, Date.now());
+        }
+        console.log("Started");
+        stopMsg = setInterval(sayDate, 1000, 'Hey beautiful')
+    } )
+    
+    
+
+    document.querySelector('#stop').addEventListener('click', function(){
+        console.log("Stopped");
+        clearInterval(stopMsg)
+    })
+    
+</script>
+</html>
